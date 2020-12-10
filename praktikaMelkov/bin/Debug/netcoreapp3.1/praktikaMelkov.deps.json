@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "praktikaMelkov/1.0.0": {
+        "runtime": {
+          "praktikaMelkov.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "praktikaMelkov/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

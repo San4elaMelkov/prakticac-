@@ -1,0 +1,13 @@
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.csprojAssemblyReference.cache
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.AssemblyInfoInputs.cache
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.AssemblyInfo.cs
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.csproj.CoreCompileInputs.cache
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.exe
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.deps.json
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.runtimeconfig.json
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.runtimeconfig.dev.json
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.dll
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.pdb
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.dll
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.pdb
+C:\Users\lroma\source\repos\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.genruntimeconfig.cache
