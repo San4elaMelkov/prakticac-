@@ -21,5 +21,15 @@ namespace praktikaMelkov
             Console.ReadLine();
             Console.Clear();
         }
+        public static double Round(double value, int dec)
+        {
+            return Math.Floor(value*dec)/dec;
+        }
+        public static string Read(string str)
+        {
+            Console.WriteLine(str);
+            return Console.ReadLine();
+        }
+        
     }
 }

@@ -6,7 +6,7 @@ namespace praktikaMelkov
 {
     class laba1
     {
-        public void print()
+        public static void print()
         {
             Console.WriteLine("Задание 3");
             laba1_3 zad1 = new laba1_3();
