@@ -8,13 +8,17 @@ namespace praktikaMelkov
     {
         public static void print()
         {
-            string text = Melkov.Read("Введите текст");
-            Console.WriteLine(text.Split().Length);
-            if(text.Split().Length % 2==0)
-                Array.ForEach(text.Split(' ').OrderBy(x => x.Length).ToArray(), x => Console.WriteLine(x));
-            else
-                Array.ForEach(text.Split(' ').OrderByDescending(x => x.Length).ToArray(), x => Console.WriteLine(x));
+            Library.Sort(Melkov.Read("Введите текст"));
         }
-
+        class Library 
+        {
+            public static void Sort(string text)
+            {
+                if(text.Split().Length % 2 == 0) 
+                    Array.ForEach(text.Split(' ').OrderBy(x => x.Length).ToArray(), x => Console.WriteLine(x));
+                else 
+                    Array.ForEach(text.Split(' ').OrderByDescending(x => x.Length).ToArray(), x => Console.WriteLine(x));
+            }
+        }
     }
 }

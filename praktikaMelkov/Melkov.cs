@@ -14,9 +14,22 @@ namespace praktikaMelkov
                 arr.Add(rnd.Next(min, max));
             return arr;
         }
-        public static void Whait()
+        public static List<List<int>> Generator2x(int length, int min, int max)
         {
-            Console.WriteLine();
+            Random rnd = new Random();
+            List<List<int>> Mas = new List<List<int>>(); 
+            List<int> row = new List<int>();
+            for (int i = 0; i < length; i++)
+            {
+                row = new List<int>();
+                for (int j = 0; j < length; j++) row.Add(rnd.Next(min,max)); 
+                Mas.Add(row);                           
+            }
+            return Mas;
+        }
+        public static void Whait(string str = "")
+        {
+            Console.WriteLine(str);
             Console.WriteLine("Нажмите любую клавишу для продолжения");
             Console.ReadLine();
             Console.Clear();
@@ -29,6 +42,16 @@ namespace praktikaMelkov
         {
             Console.WriteLine(str);
             return Console.ReadLine();
+        }
+        public static void PrintMass2x(List<List<int>> mass)
+        {
+            for (int i = 0; i < mass.Count; i++)
+            {
+                for (int j = 0; j < mass.Count; j++)
+                    Console.Write(mass[i][j] + " ");
+                Console.WriteLine();
+            }
+               
         }
         
     }

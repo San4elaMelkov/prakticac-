@@ -26,9 +26,9 @@ namespace praktikaMelkov
             Console.WriteLine($"Cумма четных чисел = {summ}");
             Melkov.Whait();
             Console.WriteLine("Задание 5");
-            array = Melkov.Generator(4, -100, 100);
+            int [] arr = Melkov.Generator(4, -100, 100).ToArray();
             summ = 0;
-            foreach (int a in array)
+            foreach (int a in arr)
             {
                 Console.Write($"{a} ");
                 if (a > 0)
