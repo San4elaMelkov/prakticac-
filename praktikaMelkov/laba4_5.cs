@@ -4,7 +4,7 @@ using System.Text;
 
 namespace praktikaMelkov
 {
-    class laba4
+    class laba4_5
     {
         public static void print()
         {
@@ -35,18 +35,52 @@ namespace praktikaMelkov
                 n = int.Parse(Melkov.Read("Введите номер комнаты которой надо посчитать обьем метров кубических"));
                 if (n > rooms.Length) Console.WriteLine($"Дибил, у тебя всего {rooms.Length} комнат");
                 else Console.WriteLine($"Обьем комнаты = {rooms[n-1].GetVolume()}");
-
-                MyArray arr1 = new MyArray(Melkov.Generator(4,0,1));
-                MyArray arr2 = new MyArray(Melkov.Generator(4, 0, 1));
-                /*List<int> arr = arr1 * arr2;
+                Melkov.Whait("Задание 3");
+                MyArray<int> arr1 = new MyArray<int>(Melkov.Generator(4,1,5));
+                MyArray<int> arr2 = new MyArray<int>(Melkov.Generator(4, 1, 5));
+                List<int> arr = arr1 * arr2;
                 Console.WriteLine("Умножение массивов");
                 foreach(double ar in arr)
-                    Console.WriteLine(ar);*/
+                    Console.WriteLine(ar);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Демон не ломай мою программу");
                 Console.WriteLine(e.Message);
+                Console.WriteLine("Я лучше сам введу данные");
+                Melkov.Whait();
+                int n = 3;
+                List<List<int>> mass = Melkov.Generator2x(n, -100, 100);
+                Melkov.PrintMass2x(mass);
+                Console.WriteLine($"Определитель матрицы = {Determinant(mass, n)}");
+                Melkov.Whait("Задание 2");
+                n = 3;
+                Room[] rooms = new Room[n];
+                int i;
+                double metr, height, width;
+                int window;
+                for (i = 0; i < rooms.Length; i++)
+                {
+                    metr = 10;
+                    window = 5;
+                    height = 2.3;
+                    width = 19;
+                    rooms[i] = new Room(metr, height, window, width);
+                }
+                Console.WriteLine("Создание комнат завершено");
+                n = 1;
+                if (n > rooms.Length) Console.WriteLine($"Дибил, у тебя всего {rooms.Length} комнат");
+                else Console.WriteLine($"Площадь комнаты = {rooms[3 - 1].GetSquare()} метров квадратных");
+                n = 2;
+                if (n > rooms.Length) Console.WriteLine($"Дибил, у тебя всего {rooms.Length} комнат");
+                else Console.WriteLine($"Обьем комнаты = {rooms[2 - 1].GetVolume()}");
+                Melkov.Whait("Задание 3");
+                MyArray<int> arr1 = new MyArray<int>(Melkov.Generator(4, 1, 5));
+                MyArray<int> arr2 = new MyArray<int>(Melkov.Generator(4, 1, 5));
+                List<int> arr = arr1 * arr2;
+                Console.WriteLine("Умножение массивов");
+                foreach (double ar in arr)
+                    Console.WriteLine(ar);
             }
         }
         static int Determinant(List<List<int>> mass, int m)
@@ -57,7 +91,7 @@ namespace praktikaMelkov
             return 0;
 
         }
-        class MyArray
+        class MyArray<T>
         {
             List<double> dArray = new List<double>();
             List<int> iArray = new List<int>();
@@ -86,15 +120,35 @@ namespace praktikaMelkov
                     this.iArray[i] = arr1[i] * arr2[i];
                 return this.iArray;
             }
-            public static List<double> operator *(MyArray ob1, MyArray ob2)
+            public static List<double> operator *(MyArray<double> ob1, MyArray<T> ob2)
             {
-                if (ob1.dArray.Count != ob2.dArray.Count) Console.WriteLine("Даны разной длины массивы");
-                return ob1.Multi(ob1.dArray, ob2.dArray);
+                if(ob1.GetType() != ob2.GetType()) throw new Exception("Даны разной длины массивы");
+                if (ob1.iArray.Count != ob2.iArray.Count) throw new Exception("Даны разной длины массивы");
+                try
+                {
+                    return ob1.Multi(ob1.dArray, ob2.dArray);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    return new List<double>();
+                }
             }
-            public static List<int> operator *(MyArray ob1, MyArray ob2)
+            public static List<int> operator *(MyArray<int> ob1, MyArray<T> ob2)
             {
-                if (ob1.iArray.Count != ob2.iArray.Count) Console.WriteLine("Даны разной длины массивы");
-                return ob1.Multi(ob1.iArray, ob2.iArray);
+                if(ob1.GetType() != ob2.GetType()) throw new Exception("Даны разной длины массивы");
+                if (ob1.iArray.Count != ob2.iArray.Count) throw new Exception("Даны разной длины массивы");
+                try
+                {
+                    return ob1.Multi(ob1.iArray, ob2.iArray);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    return new List<int>();
+                }
+                
+                
             }
         }
         class Room
@@ -113,7 +167,7 @@ namespace praktikaMelkov
                     if (value > 0 && value < 100)
                         this.metr = value;
                     else
-                        throw new Exception("Недопустимые значение");
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public Room(double metr = 0.0, double height = 0.0, int window = 0, double width = 0.0)
@@ -127,9 +181,10 @@ namespace praktikaMelkov
             {
                 get { return this.height; }
                 set { 
-                    if (value > 0 && value < 5) 
+                    if (value > 0 && value < 10) 
                         this.height = value;
-                    else throw new Exception("Недопустимые значение");
+                    else 
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public double Width
@@ -137,9 +192,10 @@ namespace praktikaMelkov
                 get { return this.width; }
                 set
                 {
-                    if (value > 0 && value < 5)
+                    if (value > 0 && value < 30)
                         this.width = value;
-                    else throw new Exception("Недопустимые значение");
+                    else 
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public int Window
@@ -148,7 +204,8 @@ namespace praktikaMelkov
                 set { 
                     if (value > 0 && value < 10) 
                         this.window = value;
-                    else throw new Exception("Недопустимые значение");
+                    else 
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public double Square
@@ -156,9 +213,10 @@ namespace praktikaMelkov
                 get { return this.square; }
                 set
                 {
-                    if (value > 0 && value < 5)
+                    if (value > 0 && value < 50)
                         this.square = value;
-                    else throw new Exception("Недопустимые значение");
+                    else 
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public double Volume
@@ -166,9 +224,10 @@ namespace praktikaMelkov
                 get { return this.volume; }
                 set
                 {
-                    if (value > 0 && value < 10)
+                    if (value > 0 && value < 100)
                         this.volume = value;
-                    else throw new Exception("Недопустимые значение");
+                    else 
+                        Console.WriteLine("Недопустимые значение");
                 }
             }
             public double GetSquare()

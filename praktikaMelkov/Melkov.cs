@@ -38,7 +38,7 @@ namespace praktikaMelkov
         {
             return Math.Floor(value*dec)/dec;
         }
-        public static string Read(string str)
+        public static string Read(string str = "")
         {
             Console.WriteLine(str);
             return Console.ReadLine();
@@ -53,6 +53,7 @@ namespace praktikaMelkov
             }
                
         }
+
         
     }
 }

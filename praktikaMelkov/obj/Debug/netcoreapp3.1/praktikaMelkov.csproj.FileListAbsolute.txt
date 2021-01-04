@@ -24,3 +24,16 @@ C:\Users\lroma\OneDrive\Desktop\ПрактикаМелков\praktikaMelkov\prak
 C:\Users\lroma\OneDrive\Desktop\ПрактикаМелков\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.dll
 C:\Users\lroma\OneDrive\Desktop\ПрактикаМелков\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.pdb
 C:\Users\lroma\OneDrive\Desktop\ПрактикаМелков\praktikaMelkov\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.genruntimeconfig.cache
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.exe
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.deps.json
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.runtimeconfig.json
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.runtimeconfig.dev.json
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.dll
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\bin\Debug\netcoreapp3.1\praktikaMelkov.pdb
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.csprojAssemblyReference.cache
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.AssemblyInfoInputs.cache
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.AssemblyInfo.cs
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.csproj.CoreCompileInputs.cache
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.dll
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.pdb
+C:\Users\San4ela\Source\Repos\prakticac-\praktikaMelkov\obj\Debug\netcoreapp3.1\praktikaMelkov.genruntimeconfig.cache
