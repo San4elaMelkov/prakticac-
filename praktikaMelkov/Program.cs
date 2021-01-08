@@ -7,7 +7,7 @@ namespace praktikaMelkov
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            laba8.print();
+            laba9.print();
             Console.ReadLine();
         }
     }
