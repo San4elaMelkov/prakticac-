@@ -24,7 +24,7 @@ namespace praktikaMelkov
                 growth = 183
 
             }
-            public bool women(string name, double sisi)
+            public bool women(string name, byte sisi)
             {
                 if (sisi >= 2)
                 {
