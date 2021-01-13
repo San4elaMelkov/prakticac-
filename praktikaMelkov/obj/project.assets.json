@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\San4ela\\Source\\Repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
+      "projectUniqueName": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
       "projectName": "praktikaMelkov",
-      "projectPath": "C:\\Users\\San4ela\\Source\\Repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
+      "projectPath": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
       "packagesPath": "C:\\Users\\San4ela\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\San4ela\\Source\\Repos\\prakticac-\\praktikaMelkov\\obj\\",
+      "outputPath": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\San4ela\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -65,6 +65,18 @@ namespace praktikaMelkov
             for (int i = 0; i < matrix.GetLength(0); i++)
                 for (int j = 0; j < matrix.GetLength(0); j++)
                     matrix[i, j] = random.Next(1, 9);
+            int m = int.Parse(Melkov.Read("Введите число"));
+            int c=0,summ = 0;
+            Console.WriteLine($"Кол-во строк = {matrix.Length}");
+            foreach(int a in matrix)
+            {
+                if (a<m)
+                {
+                    c++;
+                    summ += a;
+                }
+            }
+            Console.WriteLine($"Среднее арифметическое = {summ/c}");
             Print(ToTriangle(matrix));
 
         }

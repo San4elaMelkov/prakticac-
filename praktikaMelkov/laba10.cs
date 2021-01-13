@@ -9,9 +9,11 @@ namespace praktikaMelkov
     {
         public static void print()
         {
-            StudentViewer viewer = new StudentViewer(4);
-            double total = TotalCost(viewer, 35.0, 20);
-            Console.WriteLine(total);
+            StudentViewer viewer = new StudentViewer(3);
+            double total = TotalCost(viewer, 35.0, 1);
+            Console.WriteLine($"Посещений: {viewer.visits}");
+            Console.WriteLine($"Скидка: {viewer.discount}");
+            Console.WriteLine($"Итоговая стоимость: {total}");
         }
         public static double TotalCost(Viewer viewer, double cost, int ticket)
         {
@@ -64,36 +66,42 @@ namespace praktikaMelkov
         }
         class StudentViewer : Viewer
         {
+            private int Visits;
             public int visits
             {
-                get { return visits; }
+                get { return this.Visits; }
                 set
                 {
                     if (value < 100)
-                        this.visits = value;
+                    {
+                        this.Visits = value;
+                        this.discount = 1; 
+                    }
+                        
                 }
             }
             public StudentViewer(int visit)
             {
-                this.visits = visit;
+                this.Visits = visit;
             }
+            private int Discount;
             public double discount
             {
                 get
                 {
-                    return discount;
+                    return this.Discount;
                 }
                 set
                 {
-                    if (this.visits % 4 == 0 && this.discount != 50)
+                    if (this.visits % 4 == 0 && this.Discount != 50)
                     {
-                        this.discount = 50;
+                        this.Discount = 50;
                     }
                 }
             }
             public double Cost(double cost)
             {
-                return (cost * discount) / 100;
+                return cost * this.Visits - ((cost*this.Visits * this.Discount) / 100);
             }
         }
     }

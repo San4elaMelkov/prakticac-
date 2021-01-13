@@ -12,14 +12,14 @@ namespace praktikaMelkov
         public static void print()
         {
             Console.WriteLine("Задание 1");
-            using (StreamReader reader = new StreamReader("D:\\file.txt"))
+            using (StreamReader reader = new StreamReader("../../../laba7.txt"))
             {
                 Regex regex = new Regex(@"\b[+-]?\d{2}\b");
                 string s = null;
                 while (false == reader.EndOfStream)
                 {
                     s = reader.ReadLine();
-                    if (true == regex.IsMatch(s))
+                    if (!regex.IsMatch(s))
                     {
                         Console.WriteLine(s);
                     }
