@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -68,9 +69,65 @@ namespace praktikaMelkov
                 }
                 Console.WriteLine("___________________________");
             }
-
-
-
+            Melkov.Whait("Задание 2");
+            List<Student> students = new List<Student>();
+            try
+            {
+                using (StreamReader reader = new StreamReader("../../../laba_9/input.txt"))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        string[] tmp = line.Split(",");
+                        students.Add(
+                            new Student
+                            {
+                                Name = tmp[0],
+                                Age = int.Parse(tmp[1]),
+                                Address = tmp[2],
+                                School = int.Parse(tmp[3])
+                            }
+                        );
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+            int school = int.Parse(Melkov.Read("Введите номер школы:"));
+            var selectedStudents = from student in students
+                                where student.School == school
+                                orderby student.Age
+                                select student;
+            try
+            {
+                using (StreamWriter writer = new StreamWriter("../../../laba_9/output.txt", false, System.Text.Encoding.Default))
+                {
+                    foreach (var student in selectedStudents)
+                    {
+                        writer.WriteLine(student.ToString());
+                    }
+                }
+                Console.WriteLine("Файл заполнен");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+        }
+        private struct Student
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
+            public string Address { get; set; }
+            public int School { get; set; }
+            public override string ToString()
+            {
+                return Name + " " + Age + " " + Address + " " + School;
+            }
         }
         private static Bride[] Brides = GetBrides();
         public static Bride[] GetBrides()
@@ -155,7 +212,7 @@ namespace praktikaMelkov
         public class Bride: Joven
         {
             private string[] subNames = new string[] { "Григорьева", "Пономарёва", "Герасимова", "Королёва", "Мелкова", "Захарова", "Романова", "Сергеева", "Сорокина", "Яковлева", "Алексеева", "Беляева", "Степанова", "Титова", "Андреева", "Комарова", "Баранова", "Васильева", "Морозова", "Волкова", "Петрова", "Киселёва", "Павлова" };
-            private string[] names = new string[] { "Алекстанда", "Полина", "Катя", "Владислава", "Влада", "Настя", "Маргарита", "Кира", "Даша", "Валентина", "Ира", "Аня", "Валя", "Ростислава" };
+            private string[] names = new string[] { "Александра", "Полина", "Катя", "Владислава", "Влада", "Настя", "Маргарита", "Кира", "Даша", "Валентина", "Ира", "Аня", "Валя", "Ростислава" };
             
             public PropBride prop = new PropBride().Create();
             public Bride Create(int id)
@@ -175,7 +232,7 @@ namespace praktikaMelkov
         public class BrideGroome: Joven
         {
             string[] subNames = new string[] { "Григорьев", "Пономарёв", "Герасимов", "Королёв", "Борисов", "Захаров", "Романов", "Сергеев", "Сорокин", "Яковлев", "Алексеев", "Беляев", "Степанов", "Титов", "Андреев", "Комаров", "Баранов", "Васильев", "Морозов", "Волков", "Петров", "Киселёв", "Павлов" };
-            string[] names = new string[] { "Алекстанд", "Павел", "Дмитрий", "Владислав", "Владимир", "Денис", "Роман", "Кирилл", "Данил", "Валентин", "Илья", "Андрей", "Фёдор", "Ростисла" };
+            string[] names = new string[] { "Александр", "Павел", "Дмитрий", "Владислав", "Владимир", "Денис", "Роман", "Кирилл", "Данил", "Валентин", "Илья", "Андрей", "Фёдор", "Ростислав" };
             public PropBride prop = new PropBride().Create();
             public BrideGroome Create(int id)
             {

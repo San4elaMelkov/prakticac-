@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj": {}
+    "C:\\Users\\San4eloXyuDro4elo\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj": {}
   },
   "projects": {
-    "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj": {
+    "C:\\Users\\San4eloXyuDro4elo\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
+        "projectUniqueName": "C:\\Users\\San4eloXyuDro4elo\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
         "projectName": "praktikaMelkov",
-        "projectPath": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
-        "packagesPath": "C:\\Users\\San4ela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\San4ela\\source\\repos\\prakticac-\\praktikaMelkov\\obj\\",
+        "projectPath": "C:\\Users\\San4eloXyuDro4elo\\source\\repos\\prakticac-\\praktikaMelkov\\praktikaMelkov.csproj",
+        "packagesPath": "C:\\Users\\San4eloXyuDro4elo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\San4eloXyuDro4elo\\source\\repos\\prakticac-\\praktikaMelkov\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\San4ela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\San4eloXyuDro4elo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\San4eloXyuDro4elo\\Downloads\\nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
