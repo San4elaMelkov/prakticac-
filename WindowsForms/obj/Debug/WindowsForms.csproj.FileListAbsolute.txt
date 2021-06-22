@@ -1,0 +1,11 @@
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\WindowsForms.exe.config
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.csprojAssemblyReference.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.MainForm.resources
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.exe
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.pdb
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.LayoutForm.resources

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<buses>
+  <bus number="Близ диканьки">
+    <date>20.05.1820</date>
+    <destination>Гоголь</destination>
+  </bus>
+  <bus number="231">
+    <date>12 12 12</date>
+    <destination>NP</destination>
+  </bus>
+  <bus number="111">
+    <date>вфы</date>
+    <destination>вфы</destination>
+  </bus>
+</buses>
