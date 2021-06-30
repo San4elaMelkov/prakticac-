@@ -205,7 +205,9 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Mechanic.cs" />
     <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\Outfit.cs" />
     <Compile Include="Models\Owner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

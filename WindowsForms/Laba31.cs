@@ -21,11 +21,14 @@ namespace WindowsForms
 
         private Car car;
 
+        private Outfit outfit;
+
+        private Mechanic mechanic;
+
         public Laba31(MainForm parent) :base()
         {
             this.parent = parent;
             InitializeComponent();
-            
         }
 
         public Laba31()
@@ -38,6 +41,21 @@ namespace WindowsForms
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConfigDB"].ConnectionString);
 
             connection.Open();
+
+            //наряды
+            dataGridView4.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView4.AllowUserToAddRows = false;
+            outfit = new Outfit();
+            outfit.adapter = new SqlDataAdapter("SELECT Outfit.Id as Id, Cars.Name as AutoName, Mechanics.Name as Mechanic, Status FROM [Outfit]" +
+                " JOIN Cars ON Cars.Id = Outfit.AutoId" +
+                " JOIN Mechanics ON Mechanics.Id = Outfit.MechId", connection);
+            outfit.dataSet = new DataSet();
+            outfit.adapter.Fill(outfit.dataSet);
+
+            dataGridView4.DataSource = outfit.dataSet.Tables[0];
+            // делаем недоступным столбец id для изменения
+            dataGridView4.Columns["Id"].ReadOnly = true;
+
             //автомобили
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.AllowUserToAddRows = false;
@@ -50,6 +68,18 @@ namespace WindowsForms
             // делаем недоступным столбец id для изменения
             dataGridView1.Columns["Id"].ReadOnly = true;
 
+            //Механики
+            dataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView3.AllowUserToAddRows = false;
+            mechanic = new Mechanic();
+            mechanic.adapter = new SqlDataAdapter("SELECT * FROM [Mechanics]", connection);
+            mechanic.dataSet = new DataSet();
+            mechanic.adapter.Fill(mechanic.dataSet);
+
+            dataGridView3.DataSource = mechanic.dataSet.Tables[0];
+            // делаем недоступным столбец id для изменения
+            dataGridView3.Columns["Id"].ReadOnly = true;
+
             //владельцы
             dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView2.AllowUserToAddRows = false;
@@ -61,11 +91,6 @@ namespace WindowsForms
             dataGridView2.DataSource = owner.dataSet.Tables[0];
             // делаем недоступным столбец id для изменения
             dataGridView2.Columns["Id"].ReadOnly = true;
-        }
-
-
-        private void update_Click(object sender, EventArgs e)
-        {
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -127,6 +152,41 @@ namespace WindowsForms
             parameter.Direction = ParameterDirection.Output;
 
             car.adapter.Update(car.dataSet);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            DataRow row = mechanic.dataSet.Tables[0].NewRow(); // добавляем новую строку в DataTable
+            mechanic.dataSet.Tables[0].Rows.Add(row);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView3.SelectedRows)
+            {
+                dataGridView3.Rows.Remove(row);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(mechanic.adapter);
+            mechanic.adapter.InsertCommand = new SqlCommand("INSERT INTO [Mechanics] (Name, Pay, Experience)" +
+                " VALUES(@Name, @Pay, @Experience)", connection);
+            mechanic.adapter.InsertCommand.CommandType = CommandType.Text;
+            mechanic.adapter.InsertCommand.Parameters.Add(new SqlParameter("@Name", SqlDbType.VarChar, 50, "Name"));
+            mechanic.adapter.InsertCommand.Parameters.Add(new SqlParameter("@Pay", SqlDbType.Int, 0, "Pay"));
+            mechanic.adapter.InsertCommand.Parameters.Add(new SqlParameter("@Experience", SqlDbType.Int, 0, "Experience"));
+
+            SqlParameter parameter = mechanic.adapter.InsertCommand.Parameters.Add("@Id", SqlDbType.Int, 0, "Id");
+            parameter.Direction = ParameterDirection.Output;
+
+            mechanic.adapter.Update(mechanic.dataSet);
+        }
+
+        private void Laba31_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parent.Show();
         }
     }
 }

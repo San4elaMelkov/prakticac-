@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class MainForm : Form
+    public partial class MainForm : LayoutForm
     {
-        public MainForm()
+        public MainForm() :base()
         {
             InitializeComponent();
         }
@@ -21,12 +21,15 @@ namespace WindowsForms
         {
             Laba23 laba23 = new Laba23(this);
             laba23.Show();
+            Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             Laba31 laba31 = new Laba31(this);
             laba31.Show();
+            Hide();
+
         }
     }
 }
