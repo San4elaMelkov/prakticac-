@@ -192,6 +192,12 @@
     <Compile Include="Laba31.Designer.cs">
       <DependentUpon>Laba31.cs</DependentUpon>
     </Compile>
+    <Compile Include="Laba32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laba32.Designer.cs">
+      <DependentUpon>Laba32.cs</DependentUpon>
+    </Compile>
     <Compile Include="LayoutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Laba31.resx">
       <DependentUpon>Laba31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laba32.resx">
+      <DependentUpon>Laba32.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LayoutForm.resx">
       <DependentUpon>LayoutForm.cs</DependentUpon>

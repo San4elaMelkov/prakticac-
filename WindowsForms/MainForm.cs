@@ -31,5 +31,12 @@ namespace WindowsForms
             Hide();
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Laba32 laba32 = new Laba32(this);
+            laba32.Show();
+            Hide();
+        }
     }
 }

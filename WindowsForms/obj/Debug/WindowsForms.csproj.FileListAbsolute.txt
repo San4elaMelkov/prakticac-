@@ -91,3 +91,4 @@ C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\Window
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Database1.mdf
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Database1_log.ldf
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Laba31.resources
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Laba32.resources

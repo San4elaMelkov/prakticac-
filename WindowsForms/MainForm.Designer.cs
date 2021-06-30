@@ -149,9 +149,9 @@ namespace WindowsForms
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(124, 48);
             this.button10.TabIndex = 0;
-            this.button10.Text = "Лаба 23";
+            this.button10.Text = "Лаба 32";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button1_Click);
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
