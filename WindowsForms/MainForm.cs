@@ -19,8 +19,14 @@ namespace WindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Laba24 laba23 = new Laba24(this);
+            Laba23 laba23 = new Laba23(this);
             laba23.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Laba31 laba31 = new Laba31(this);
+            laba31.Show();
         }
     }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba18", "Laba18\Laba18.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{8740AA4A-4FE1-439F-A30E-BA3BE207A0BF}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{8180DB10-52B7-4E5A-A2B4-D547144A6C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{8740AA4A-4FE1-439F-A30E-BA3BE207A0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8740AA4A-4FE1-439F-A30E-BA3BE207A0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8740AA4A-4FE1-439F-A30E-BA3BE207A0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8180DB10-52B7-4E5A-A2B4-D547144A6C64}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

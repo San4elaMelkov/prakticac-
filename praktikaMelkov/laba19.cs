@@ -7,8 +7,6 @@ namespace praktikaMelkov
 {
     class laba19
     {
-
-
         public static void print()
         {
             List<MARSH> marshes = new List<MARSH>();

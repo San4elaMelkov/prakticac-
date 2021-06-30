@@ -4,7 +4,8 @@ namespace WindowsForms
 {
     public partial class LayoutForm : Form
     {
-        public LayoutForm() : base()
+
+        public LayoutForm()
         {
             StartPosition = FormStartPosition.CenterScreen;
         }
