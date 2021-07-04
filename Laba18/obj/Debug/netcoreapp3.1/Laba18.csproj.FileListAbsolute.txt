@@ -1,0 +1,9 @@
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\bin\Debug\netcoreapp3.1\Laba18.deps.json
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\bin\Debug\netcoreapp3.1\Laba18.dll
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\bin\Debug\netcoreapp3.1\Laba18.pdb
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.csprojAssemblyReference.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.AssemblyInfoInputs.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.AssemblyInfo.cs
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.csproj.CoreCompileInputs.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.dll
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Laba18\obj\Debug\netcoreapp3.1\Laba18.pdb

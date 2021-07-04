@@ -160,9 +160,9 @@ namespace WindowsForms
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(124, 48);
             this.button11.TabIndex = 0;
-            this.button11.Text = "Лаба 23";
+            this.button11.Text = "Лаба 34";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button1_Click);
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 

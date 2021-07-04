@@ -92,3 +92,6 @@ C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Databa
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Database1_log.ldf
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Laba31.resources
 C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Laba32.resources
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Database2.mdf
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\bin\Debug\Database2_log.ldf
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\WindowsForms\obj\Debug\WindowsForms.Laba34.resources

@@ -1,0 +1,6 @@
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\bin\Debug\Database.dacpac
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\bin\Debug\Database.dll
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\bin\Debug\Database.pdb
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\obj\Debug\Database.dll
+C:\Users\San4eloXyuDro4elo\source\repos\prakticac-\Database\obj\Debug\Database.pdb
